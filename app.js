@@ -10,7 +10,7 @@ function agregarnombreamigo() {
     if (nombreamigo.trim() != '') {
         //almacena los nombres con el push
         listaNombreAmigos.push(document.getElementById('nomamigo').value);
-        console.log(listaNombreAmigos); //quitarlo
+        
         mostrarListaA();
     } else {
         alert: ("Por favor, inserte un nombre");
@@ -32,7 +32,7 @@ function agregarnombreamigo() {
 
     function sorteoA() {
         const sorteo = Math.floor(Math.random() * listaNombreAmigos.length);
-        console.log(listaNombreAmigos[sorteo]);
+        //console.log(listaNombreAmigos[sorteo]);
         document.getElementById("listaAmigos").innerHTML = listaNombreAmigos[sorteo]
         listaNombreAmigos = []
     }
